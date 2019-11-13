@@ -19,7 +19,7 @@ void game() {
 			printf("猜小了.\n");
 		}else
 		{
-			printf("猜对了!\n");
+			printf("余昉源爱董欢!\n");
 			break;
 		}
 	}
