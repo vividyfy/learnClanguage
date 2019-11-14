@@ -3,23 +3,23 @@
 #include <stdlib.h>
 #include <time.h>
 void menu() {
-	printf("******1.¿ªÊ¼ÓÎÏ·*****\n");
-	printf("******2.ÍË³öÓÎÏ·*****\n");
+	printf("******1.å¼€å§‹æ¸¸æˆ*****\n");
+	printf("******2.é€€å‡ºæ¸¸æˆ*****\n");
 }
 void game() {
 	int random_num = rand() % 100 + 1;
 	int input = 0;
 	while (1) {
-		printf("ÇëÊäÈëÒª²ÂµÄÊı×Ö:");
+		printf("è¯·è¾“å…¥è¦çŒœçš„æ•°å­—:");
 		scanf("%d", &input);
 		if(input > random_num) {
-			printf("²Â´óÁË.\n");
+			printf("çŒœå¤§äº†.\n");
 		}else if(input < random_num)
 		{
-			printf("²ÂĞ¡ÁË.\n");
+			printf("çŒœå°äº†.\n");
 		}else
 		{
-			printf("Óà•PÔ´°®¶­»¶!\n");
+			printf("çŒœå¯¹äº†!\n");
 			break;
 		}
 	}
@@ -33,7 +33,7 @@ int main() {
 	do
 	{
 		menu();
-			printf("ÇëÑ¡Ôñ:");
+			printf("è¯·é€‰æ‹©:");
 		scanf("%d", &input);
 		switch (input)
 		{
@@ -44,7 +44,7 @@ int main() {
 			return 0;
 			break;
 		default:
-			printf("ÎŞĞ§Êı×Ö,ÇëÖØĞÂÊäÈë!\n");
+			printf("æ— æ•ˆæ•°å­—,è¯·é‡æ–°è¾“å…¥!\n");
 			break;
 		}
 	} while (input);
